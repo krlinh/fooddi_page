@@ -1,0 +1,24 @@
+//custom grid for project
+$grid-columns:      12;
+$grid-gutter-width: 16px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 740px,
+  lg: 1023px,
+  xl: 1239px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+);
+
+// custom class 
+.flex-align-c{
+  display: flex;
+  align-items: center;
+}
