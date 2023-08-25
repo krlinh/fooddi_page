@@ -1,0 +1,142 @@
+//slider
+.shadow-banner{
+    display: flex;
+    margin-top: 4px !important;
+    justify-content: center;
+}
+.prd-sale{
+    padding: 12px 0 20px 0;
+}
+.sidebar{
+    display: flex;
+    justify-content: space-between;
+    .sidebar-title{
+        color: #5A8055;
+        font-size: 20px;
+        font-weight: 700;
+        padding-left: 20px;
+    }
+}
+//prd-sale
+.prd-sale-list{
+    justify-content: space-between;
+    padding-top: 12px;
+    #prd-sale-01{
+        background: url('/imgs/prd-sale/prd-sale01.svg'), top center / cover no-repeat;
+    }
+    #prd-sale-02{
+        background: url('/imgs/prd-sale/prd-sale02.svg'), top center / cover no-repeat;
+    }
+    #prd-sale-03{
+        background: url('/imgs/prd-sale/prd-sale03.svg'), top center / cover no-repeat;
+    }
+    #prd-sale-04{
+        background: url('/imgs/prd-sale/prd-sale04.svg'), top center / cover no-repeat;
+    }
+}
+.prd-sale-bgr{
+    position: relative;
+    width: 235px;
+    height: 235px;
+    background-color: #F4F2F2;
+    border-radius: 50%;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.prd-img{
+    position: absolute;
+    width: 222.064px;
+    height: 222.064px;
+    flex-shrink: 0;
+    border-radius: 222.064px;
+}
+.prd-sale-name{
+    color: #656464;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+} 
+//order now
+.prd-order{
+    padding-top: 20px;
+}
+.prd-order-item{
+    width: 288px;
+    height: 349px;
+    border-radius: 6px;
+    background: #F2F9F0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.prd-order-link{
+    display:flex;
+    justify-content: space-around;
+    padding:9px 0 8px 0;
+}
+.prd-order-name{
+    color: #706262;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 9px;
+}
+.prd-order-sale{
+    margin: 4px 9px;
+    justify-content: space-between;
+}
+.prd-sale-tag::before{
+    content: "SALE 50%";
+    display: inline-block;
+    background:url('/imgs/sale-tag.svg'), top center / cover no-repeat ;
+    width: 94px;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+}
+.prd-order-time-sale::after{
+    content: "Lúc: 8:00 - 9:00";
+    display: inline-block;
+    width: 110px;
+    line-height: 22px;
+    border-radius: 4px;
+    border: 1px solid #14540420;
+    text-align: center;
+    color: #145404;
+    font-size: 12px;
+    font-weight: 400;
+}
+.prd-order-price{
+    margin: 8px 9px;
+}
+.prd-price-new{
+    color: #F42828;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-right: 12px;
+}
+.prd-price-old{
+    color: #5A8055;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration-line: line-through;
+}
+.view-more-prd{
+    padding-top: 30px;
+    justify-content: center;
+}
+#btn-view-more-prd{
+    width: 288px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #5A8055;
+    font-size: 25px;
+    font-weight: 500;
+    color: #5A8055;
+    &:hover{
+        background-color: #5A8055;
+        color: #FFF;
+    }
+}
