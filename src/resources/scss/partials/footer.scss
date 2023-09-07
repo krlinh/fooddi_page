@@ -1,0 +1,62 @@
+.footer-wide{
+    background-color: #145404;
+    height: 320px;
+}
+.footer_logo{
+    padding: 12px 20px;
+    display: block;
+}
+h2{
+    font-size: 1.6rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    color: #f9f7f7 !important;
+    line-height: 2.1rem !important;
+}
+.footer_info{
+    margin: 0 0 0 20px;
+}
+.footer_info-list,
+.instruct-order-list{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #e2dddd;
+    line-height: 2.5rem;
+    width: 100%;
+}
+.footer_contact-email{
+    width: 100%;
+    height: 34px;
+    padding-right: 20px;  
+}
+#email-btn{
+    font-size: 1.6rem;
+    width: 25%;
+    height: 100%;
+    background-color: #76BD64;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color: #FFF;
+    font-weight: 700;
+    &:hover{
+        background-color:  #539a35; 
+    }
+} 
+#email-box{
+    width: 75%;
+    height: 100%;
+    background-color: #f9f7f7;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 4px 12px;
+    outline-style: none;
+    font-size: 1.3rem;
+    color: #858282;
+}
+.footer_contact-media{
+    justify-content: flex-end;
+    padding-right: 20px;  
+    a{
+        padding: 16px 0 8px 16px;
+    }
+}
