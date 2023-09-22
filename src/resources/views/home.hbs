@@ -63,6 +63,7 @@
         </div>
     </div>
 </div>
+{{!--orderPrds--}}
 <div class="order-now">
     <div class="sidebar">
         <span class="sidebar-title">ORDER NOW</span>
@@ -71,138 +72,24 @@
         </svg>
     </div>
     <div class="prd-order flex-align-c row">
-        <div class="col-xl-3">
-            <div class="prd-order-item">
-                <a href="" class="prd-order-link">
-                    <img src="/imgs/prd-order/prd-01.svg" alt="prd-order">
-                </a>
-                <a href="" class="prd-order-name">Combo humburger double</a>
-                <div class="prd-order-sale flex-align-c">
-                    <span class="prd-sale-tag"></span>
-                    <span class="prd-order-time-sale"></span>
-                </div>
-                <div class="prd-order-price flex-align-c">
-                    <span class="prd-price-new">60.000 đ</span>
-                    <span class="prd-price-old">90.000 đ</span>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3">
-            <div class="prd-order-item">
-                <a href="" class="prd-order-link">
-                    <img src="/imgs/prd-order/prd-01.svg" alt="prd-order">
-                </a>
-                <a href="" class="prd-order-name">Combo humburger double</a>
-                <div class="prd-order-sale flex-align-c">
-                    <span class="prd-sale-tag"></span>
-                    <span class="prd-order-time-sale"></span>
-                </div>
-                <div class="prd-order-price flex-align-c">
-                    <span class="prd-price-new">60.000 đ</span>
-                    <span class="prd-price-old">90.000 đ</span>
+        {{#each orderPrds}}
+            <div class="col-xl-3">
+                <div class="prd-order-item">
+                    <a href="" class="prd-order-link">
+                        <img src="{{this.img}}" alt="prd-order">
+                    </a>
+                    <a href="" class="prd-order-name">{{this.name}}</a>
+                    <div class="prd-order-sale flex-align-c">
+                        <span class="prd-sale-tag"></span>
+                        <span class="prd-order-time-sale"></span>
+                    </div>
+                    <div class="prd-order-price flex-align-c">
+                        <span class="prd-price-new">{{this.price}} đ</span>
+                        <span class="prd-price-old">{{this.priceSale}} đ</span>
+                    </div>
                 </div>
             </div>
-        </div>
-         <div class="col-xl-3">
-            <div class="prd-order-item">
-                <a href="" class="prd-order-link">
-                    <img src="/imgs/prd-order/prd-01.svg" alt="prd-order">
-                </a>
-                <a href="" class="prd-order-name">Combo humburger double</a>
-                <div class="prd-order-sale flex-align-c">
-                    <span class="prd-sale-tag"></span>
-                    <span class="prd-order-time-sale"></span>
-                </div>
-                <div class="prd-order-price flex-align-c">
-                    <span class="prd-price-new">60.000 đ</span>
-                    <span class="prd-price-old">90.000 đ</span>
-                </div>
-            </div>
-        </div>
-         <div class="col-xl-3">
-            <div class="prd-order-item">
-                <a href="" class="prd-order-link">
-                    <img src="/imgs/prd-order/prd-01.svg" alt="prd-order">
-                </a>
-                <a href="" class="prd-order-name">Combo humburger double</a>
-                <div class="prd-order-sale flex-align-c">
-                    <span class="prd-sale-tag"></span>
-                    <span class="prd-order-time-sale"></span>
-                </div>
-                <div class="prd-order-price flex-align-c">
-                    <span class="prd-price-new">60.000 đ</span>
-                    <span class="prd-price-old">90.000 đ</span>
-                </div>
-            </div>
-        </div>
-
-    </div>
-     <div class="prd-order flex-align-c row">
-        <div class="col-xl-3">
-            <div class="prd-order-item">
-                <a href="" class="prd-order-link">
-                    <img src="/imgs/prd-order/prd-01.svg" alt="prd-order">
-                </a>
-                <a href="" class="prd-order-name">Combo humburger double</a>
-                <div class="prd-order-sale flex-align-c">
-                    <span class="prd-sale-tag"></span>
-                    <span class="prd-order-time-sale"></span>
-                </div>
-                <div class="prd-order-price flex-align-c">
-                    <span class="prd-price-new">60.000 đ</span>
-                    <span class="prd-price-old">90.000 đ</span>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3">
-            <div class="prd-order-item">
-                <a href="" class="prd-order-link">
-                    <img src="/imgs/prd-order/prd-01.svg" alt="prd-order">
-                </a>
-                <a href="" class="prd-order-name">Combo humburger double</a>
-                <div class="prd-order-sale flex-align-c">
-                    <span class="prd-sale-tag"></span>
-                    <span class="prd-order-time-sale"></span>
-                </div>
-                <div class="prd-order-price flex-align-c">
-                    <span class="prd-price-new">60.000 đ</span>
-                    <span class="prd-price-old">90.000 đ</span>
-                </div>
-            </div>
-        </div>
-         <div class="col-xl-3">
-            <div class="prd-order-item">
-                <a href="" class="prd-order-link">
-                    <img src="/imgs/prd-order/prd-01.svg" alt="prd-order">
-                </a>
-                <a href="" class="prd-order-name">Combo humburger double</a>
-                <div class="prd-order-sale flex-align-c">
-                    <span class="prd-sale-tag"></span>
-                    <span class="prd-order-time-sale"></span>
-                </div>
-                <div class="prd-order-price flex-align-c">
-                    <span class="prd-price-new">60.000 đ</span>
-                    <span class="prd-price-old">90.000 đ</span>
-                </div>
-            </div>
-        </div>
-         <div class="col-xl-3">
-            <div class="prd-order-item">
-                <a href="" class="prd-order-link">
-                    <img src="/imgs/prd-order/prd-01.svg" alt="prd-order">
-                </a>
-                <a href="" class="prd-order-name">Combo humburger double</a>
-                <div class="prd-order-sale flex-align-c">
-                    <span class="prd-sale-tag"></span>
-                    <span class="prd-order-time-sale"></span>
-                </div>
-                <div class="prd-order-price flex-align-c">
-                    <span class="prd-price-new">60.000 đ</span>
-                    <span class="prd-price-old">90.000 đ</span>
-                </div>
-            </div>
-        </div>
-
+        {{/each}}
     </div>
 </div>
 <div class="view-more-prd row">

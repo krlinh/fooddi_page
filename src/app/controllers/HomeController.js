@@ -1,9 +1,20 @@
+const Product = require("../models/Product");
 
-class HomeController{
+//converst to object
+const {mutipleMongooesToObject} = require('../../until/mongoose');
+const {mongooseToObject} = require('../../until/mongoose');
+
+class homeController{
     //[GET]/home
     show(req,res,next){
-        res.render('home')
+        Product.find({prdTypes:{$in:["orderPrd"]}})
+            .then(orderPrds=>{
+                res.render('home',{
+                    orderPrds: mutipleMongooesToObject(orderPrds)
+                })
+            })
+            .catch(next)
     }
 }
 
-module.exports = new HomeController;
+module.exports = new homeController; 
