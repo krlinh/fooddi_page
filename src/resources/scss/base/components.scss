@@ -1,0 +1,18 @@
+.btn-prd{
+    min-width: 160px;
+    min-height: 40px;
+    border-radius: 16px;
+    padding: 4px 16px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 4px 12px;
+}
+.btn-danger{
+    color:#FFF;
+    background: linear-gradient(to bottom, #bf5c05, #e58a4a,#bf5c05);
+}
+.btn-success{
+    color:#FFF;
+    background-image: linear-gradient(to bottom, #76BD64, #1E7D06,#76BD64);
+}
+
