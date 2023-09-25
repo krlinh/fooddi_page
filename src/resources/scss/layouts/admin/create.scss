@@ -1,0 +1,59 @@
+.create-prd{
+    max-width: 550px;
+    min-height: 350px;
+    background-color:#FEFEFE;
+    border-radius: 24px;
+    border: 0.4px solid #30851b7b;
+    box-shadow: -1px 3px 11px 0px rgba(0, 0, 0, 0.237) inset;
+    margin: 50px auto 200px auto;
+    .create-title{
+        color: #1E7D06;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding: 16px 0 4px 0;
+    }
+}
+#create-prd-form{
+    margin: 8px 12px;
+    label,select{
+        color: #1E7D06;
+    }
+    .insert-info-item,select{
+        border: 0.7px solid #CDCDCD;
+        background: #FFF; 
+        outline: none;
+        border-radius: 6px; 
+        line-height: 2.5rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+
+    }
+    label{
+        width: 120px;
+        line-height: 3.5rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    select{
+        min-width: 80px;
+        margin-left: 35px;
+        padding: 6px; 
+    }
+}
+.select-info{
+    padding: 8px 0;
+}
+.insert-info{
+    display: block;
+    .insert-info-item{
+        float: right;
+        width: 70%;
+        padding: 3px 12px; 
+    }
+}
+.btn-submit{ 
+    display: flex;
+    justify-content: center;
+    margin: 0 0 16px 0;
+}
