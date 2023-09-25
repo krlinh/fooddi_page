@@ -6,9 +6,13 @@ const {engine} = require('express-handlebars');
 const path = require('node:path');
 const route = require ('./routes');
 const dbconnect = require('./config/db');
-
+const bodyParser = require('body-parser');
 
 app.use(morgan('combined'));
+
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json())
+
 // connect to db
 dbconnect.connect();
 app.use(express.static(path.join(__dirname, 'public')));
