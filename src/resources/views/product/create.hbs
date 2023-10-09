@@ -1,32 +1,35 @@
-<div class="create-prd">
-    <h3 class="create-title">ADD PRODUCT TO WEB-PAGE</h3>
-    <form id="create-prd-form" method="POST" action="/products/store" name="form-store-prd">
-        <div class="select-info">
-            <div class="select-info-item">
-                <label for="prdTypes">Product type:</label>
-                <select name="prdTypes" id="prdTypes" required>
-                    <option value= "">Option product-type</option>
-                    <option value= "slide">Slide</option>
-                    <option value= "salePrd">SalePrd</option>
-                    <option value= "orderPrd">OrderPrd</option>
-                    <option value= "banner">Banner</option>
-                </select>
+<div class="row">
+    {{> dashboard}}
+    <div class="create-prd col-xl-8">
+        <h3 class="create-title">ADD PRODUCT TO WEB-PAGE</h3>
+        <form id="create-prd-form" method="POST" action="/products/store" name="form-store-prd">
+            <div class="select-info">
+                <div class="select-info-item">
+                    <label for="prdTypes">Product type:</label>
+                    <select name="prdTypes" id="prdTypes" required>
+                        <option value= "">Option product-type</option>
+                        <option value= "slide">Slide</option>
+                        <option value= "salePrd">SalePrd</option>
+                        <option value= "orderPrd">OrderPrd</option>
+                        <option value= "banner">Banner</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <div class="insert-info">
-            <label for="name">Product name:</label>
-            <input class="insert-info-item" type="text" id="name" name="name" required><br><br>
-            <label for="img">Image link:</label>
-            <input class="insert-info-item" type="text" id="img" name="img" required><br><br>
-            <label for="description">Desc:</label>
-            <input class="insert-info-item" type="text" id="description" name="description" required><br><br>
-            <label for="price">Price:</label>
-            <input class="insert-info-item" type="text" id="price" name="price" required><br><br>
-            <label for="priceSale">Price sale:</label>
-            <input class="insert-info-item" type="text" id="priceSale" name="priceSale" required><br><br>
-        </div>
-        <div class="btn-submit">
-            <button type="submit" id="btn-prd-success" class="btn-prd btn-success">Add Product</button>
-        </div>
-    </form>
+            <div class="insert-info">
+                <label for="name">Product name:</label>
+                <input class="insert-info-item" type="text" id="name" name="name" required><br><br>
+                <label for="img">Image link:</label>
+                <input class="insert-info-item" type="text" id="img" name="img" required><br><br>
+                <label for="description">Desc:</label>
+                <input class="insert-info-item" type="text" id="description" name="description" required><br><br>
+                <label for="price">Price:</label>
+                <input class="insert-info-item" type="text" id="price" name="price" required><br><br>
+                <label for="priceSale">Price sale:</label>
+                <input class="insert-info-item" type="text" id="priceSale" name="priceSale" required><br><br>
+            </div>
+            <div class="btn-submit">
+                <button type="submit" id="btn-prd-success" class="btn-prd btn-success">Add Product</button>
+            </div>
+        </form>
+    </div>
 </div>

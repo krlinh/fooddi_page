@@ -5,7 +5,7 @@
     border-radius: 24px;
     border: 0.4px solid #30851b7b;
     box-shadow: -1px 3px 11px 0px rgba(0, 0, 0, 0.237) inset;
-    margin: 50px auto 200px auto;
+    margin: 50px auto !important;
     .create-title{
         color: #1E7D06;
         text-align: center;
@@ -37,7 +37,7 @@
     }
     select{
         min-width: 80px;
-        margin-left: 35px;
+        margin-left: 108px;
         padding: 6px; 
     }
 }
