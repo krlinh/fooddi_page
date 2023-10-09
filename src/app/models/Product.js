@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const mongooseDelete =require('mongoose-delete')
 const AutoIncrement = require('mongoose-sequence')(mongoose);
 const Schema = mongoose.Schema;
 const Product = new Schema(
@@ -18,4 +19,5 @@ const Product = new Schema(
 });
 
 Product.plugin(AutoIncrement);
+Product.plugin(mongooseDelete, {overrideMethods: true});
 module.exports = mongoose.model('Product', Product); 
