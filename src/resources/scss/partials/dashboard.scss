@@ -1,0 +1,53 @@
+.dashboard{
+    background-color: #D1E7DD;
+    padding-bottom: 20px;
+    min-height: 600px;
+}
+.dashboard-title{
+    background-color: #9dcbb6; 
+    height: 100%;  
+    line-height: 4.3rem;
+    padding: 0 12px;
+    align-items: center;
+}
+.sidenav-item{
+    width: 100%;
+    height: 40px;
+} 
+.sidenav-btn,
+.dashboard-title{
+    color: #222222; 
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: block;
+}
+.sidenav-btn{
+    padding: 4px 12px;
+    background-color: #D1E7DD;
+    height:100%;
+    width: 100%;
+    text-align: start;
+    &:hover{
+        background-color: #bce1d0;
+    }
+}
+.dropdown-menu{
+    background-color: #9dcbb6 !important;
+    padding: 12px 0 !important;
+}
+.dropdown-item{
+    color: #222222 !important;
+    padding: 4px 12px !important;
+    line-height: 2.4rem;
+    font-size: 1.4rem;
+    display: block;
+    &:hover{
+        background-color: #8af8d2 !important;
+    }
+}
+.sidenav-name, .dashboard-title-name{
+    margin-left: 8px;
+}
+.dash-nav-icon{
+    font-size: 1.7rem; 
+}
