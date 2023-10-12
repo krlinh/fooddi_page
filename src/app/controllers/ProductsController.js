@@ -17,8 +17,12 @@ class ProductsController{
         const product = new Product(req.body)
         product.save()
         res.redirect('back');
-        
-        // res.json(req.body);
+    }
+    //[DELETE]/products/delete-soft/:id
+    deleteSoft(req,res,next){
+        Product.delete({_id:req.params.id})
+            .then(()=>res.redirect('back'))
+            .catch(next)
     }
 }
 
